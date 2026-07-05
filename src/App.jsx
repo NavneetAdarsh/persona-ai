@@ -9,7 +9,7 @@ export default function App() {
     const [isLoading, setIsLoading] = useState(false);
 
     const [chatHistories, setChatHistories] = useState({
-        hitesh: [{ role: 'Mentor', content: "Chai aur code appka swagat hai." }],
+        hitesh: [{ role: 'Mentor', content: "Chai aur code mai swagat hai." }],
         piyush: [{ role: 'Mentor', content: "Self obssesed bana dunga tumhe bhi." }],
     });
 
