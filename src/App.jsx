@@ -41,11 +41,11 @@ export default function App() {
             const apiKey = import.meta.env.VITE_OPENROUTER_API_KEY;
 
             // 4. Fire API request to OpenRouter
-            const res = await fetch("https://openrouter.ai", {
+            const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
                 method: "POST",
                 headers: {
                     "Authorization": `Bearer ${apiKey}`,
-                    "HTTP-Referer": window.location.origin,
+                    "HTTP-Referer": window.location.href,
                     "X-Title": "Persona AI Mentor",
                     "Content-Type": "application/json"
                 },
